@@ -22,7 +22,7 @@ cap.release()
 
 ## 保存视频
 1. 指定写入视频编码方式
-2. fourcc = cv2.VideoWriter_fourcc('M','J','P','G')
+2. fourcc = cv2.VideoWriter.fourcc('M','J','P','G')
 写入指定的编码格式
 
 
@@ -45,3 +45,8 @@ out = cv2.VideoWriter('../test.avi',Fourcc,30.0,(640,480),True)
 
 创建完成WV之后, out.write(frame)就可以了
 如果要结束了之后，也需要和cap 一样release
+
+-------------
+
+## 帧差法
+### 基本原理
